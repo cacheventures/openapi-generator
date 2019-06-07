@@ -388,10 +388,10 @@ public class RubyClientCodegen extends AbstractRubyCodegen {
     @Override
     public String toApiName(String name) {
         if (name.length() == 0) {
-            return "DefaultApi";
+            return "DefaultAPI";
         }
         // e.g. phone_number_api => PhoneNumberApi
-        return camelize(name) + "Api";
+        return camelize(name) + "API";
     }
 
     @Override
